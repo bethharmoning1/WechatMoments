@@ -29,7 +29,7 @@
 * 可以根据联系人，朋友圈时间进行过滤导出
 * 强依赖微信Windows客户端，只提供windows版本
 * 只测试过python3.11+Win10/Win11，其他环境随缘
-* 软件只能导出在电脑微信**浏览过**的朋友圈记录
+* 软件可以导出所有可见朋友圈记录
 * 浏览朋友圈方法，参考[电脑微信浏览朋友圈](/doc/manual_guide.md)
 * ![主界面.png](/doc/pic/主界面.png)
 
@@ -96,8 +96,3 @@
 
 * PC微信工具:[https://github.com/xaoyaoo/PyWxDump](https://github.com/xaoyaoo/PyWxDump)
 * 留痕（聊天导出工具）:[https://github.com/LC044/WeChatMsg](https://github.com/LC044/WeChatMsg)
-
-# 
-
-
-[技术爬爬虾](https://space.bilibili.com/316183842)
