@@ -7,14 +7,15 @@
 ## 1. 项目简介
 
 * [WechatMoments](https://github.com/tech-shrimp/WechatMoments)是一款运行在Windows上的，备份导出朋友圈为html的工具
-* 作者：[技术爬爬虾](https://space.bilibili.com/316183842)（B站 抖音 Youtube同名）更多有趣实用项目请关注
-* 开源许可: Apache License
+* 原作者：[技术爬爬虾](https://space.bilibili.com/316183842)
+* 项目改进：bethharmoning1 ([即刻](https://okjk.co/H1YTMN))
+* 开源许可: Apache License  
 * 分发，宣传，二次开发等请注明原作者
 
 ## 2. 使用说明
-* ### [视频演示-Bilibili](https://www.bilibili.com/video/BV1qq421A7aF/)
+* ### [文档说明-飞书](https://wxh4x2repwf.feishu.cn/wiki/BnSkwYvHKi9nygkswKucleHvnle）
 * (1) 安装[Windows版微信](https://pc.weixin.qq.com/)，并且登陆
-* (2) 在[Releases](https://github.com/tech-shrimp/WechatMoments/releases)下载压缩包wechat_moments.zip 
+* (2) 在[release](https://github.com/bethharmoning1/WechatMoments/release)下载压缩包wechat_moments.zip 
 * (3) 解压文件夹（路径不要包含中文）
 * (4) 管理员身份运行wechat_moments.exe，并按提示操作
 * (5) 如发生异常，重启微信，重启软件
@@ -57,17 +58,10 @@
 - 答：导出聊天记录请使用这个软件[https://github.com/LC044/WeChatMsg](https://github.com/LC044/WeChatMsg)
 
 
-## 4. 更新计划
-
-*  导出点赞，评论等
-*  HTML网页功能增强，过滤排序等功能
-*  支持更多的朋友圈格式（音乐分享等）
-*  其他导出格式（Word, PDF等）
-*  佛系开发 随缘更新
 
 ## 5. 问题反馈
 
-*  请直接提issue，或发送邮箱techshrimp@163.com
+*  请直接提issue，或发送邮箱xiesiyi6666@gmail.com
 *  请附上日志与软件截图，日志地址log\xxxx-xx-xx-output.log
 
 ## 6. 二次开发

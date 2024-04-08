@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 import tkcalendar
+import babel.numbers
 from decrypter.db_decrypt import DatabaseDecrypter
 from decrypter.video_decrypt import VideoDecrypter
 from gui.auto_scroll_guide import AutoScrollGuide
