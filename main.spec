@@ -5,7 +5,8 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    hiddenimports=['babel.numbers'],
+    datas=[],
+    hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -19,7 +20,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='wechat_moments',
+    name='main',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -29,7 +30,7 @@ exe = EXE(
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
-    entitlements_file=None
+    entitlements_file=None,
 )
 coll = COLLECT(
     exe,
@@ -38,9 +39,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='wechat_moments',
+    name='main',
 )
-
-# 将资源文件夹拷贝出来
-import shutil
-shutil.copytree('resource', f'{DISTPATH}/wechat_moments/resource')

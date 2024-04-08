@@ -49,7 +49,7 @@
 
 问：自动浏览单个朋友功能失效！
  - 答：可以手动操作，也可以替换图片提高成功率，详见文档[电脑微信浏览朋友圈](/doc/manual_guide.md)<br/>
-  
+
 问：为什么视频没法播放？
 - 答：请使用Chrome浏览器打开html文件。或者勾选视频转码，获得更多浏览器的兼容性。
 
@@ -103,7 +103,7 @@
 * PC微信工具:[https://github.com/xaoyaoo/PyWxDump](https://github.com/xaoyaoo/PyWxDump)
 * 留痕（聊天导出工具）:[https://github.com/LC044/WeChatMsg](https://github.com/LC044/WeChatMsg)
 
-# 五、捐赠
+# 
 
-如有帮助，请帮忙给B站视频点赞充电
+
 [技术爬爬虾](https://space.bilibili.com/316183842)

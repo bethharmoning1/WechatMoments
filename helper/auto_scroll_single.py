@@ -76,6 +76,60 @@ class AutoScrollSingle(threading.Thread):
         return result
 
     @retry(tries=5, delay=2)
+    def find_time(self):
+        result = None
+
+        for resolution in self.resolutions:
+            try:
+                result = pyautogui.locateCenterOnScreen(f'resource/auto_gui/{resolution}/time_button.png',
+                                                        grayscale=True, confidence=0.8)
+                break
+            except Exception as e:
+                log.LOG.warn("Can't find_time in resolution: " + resolution)
+                pass
+
+        if result is None:
+            raise Exception("Can 't find_time")
+
+        return result
+    
+    @retry(tries=5, delay=2)
+    def find_yes(self):
+        result = None
+
+        for resolution in self.resolutions:
+            try:
+                result = pyautogui.locateCenterOnScreen(f'resource/auto_gui/{resolution}/yes.png',
+                                                        grayscale=True, confidence=0.8)
+                break
+            except Exception as e:
+                log.LOG.warn("Can't find_yes in resolution: " + resolution)
+                pass
+
+        if result is None:
+            raise Exception("Can 't find_yes")
+
+        return result
+    
+    @retry(tries=5, delay=2)
+    def find_first_column(self):
+        result = None
+
+        for resolution in self.resolutions:
+            try:
+                result = pyautogui.locateCenterOnScreen(f'resource/auto_gui/{resolution}/first_column.png',
+                                                        grayscale=True, confidence=0.8)
+                break
+            except Exception as e:
+                log.LOG.warn("Can't find_fc in resolution: " + resolution)
+                pass
+
+        if result is None:
+            raise Exception("Can 't find_fc")
+
+        return result
+
+    @retry(tries=5, delay=2)
     def find_complete(self):
 
         result = None
@@ -150,6 +204,30 @@ class AutoScrollSingle(threading.Thread):
             pyautogui.click(x, y)
             time.sleep(0.25)
 
+            # 展开选择时间
+            x, y = self.find_time()
+            time.sleep(1)
+            pyautogui.click(x, y)
+            time.sleep(1)
+            
+            # 移动到第一列
+            x, y = self.find_first_column()
+            time.sleep(1)
+            # pyautogui.moveTo(x, y-100)
+            # time.sleep(0.5)
+            pyautogui.click(x, y+100)
+            time.sleep(5)
+            
+            # 滚动鼠标滚轮
+            # pyautogui.scroll(-120)
+            # time.sleep(5)
+
+            # 点击确定
+            x, y = self.find_yes()
+            time.sleep(0.5)
+            pyautogui.click(x, y)
+            time.sleep(0.5)          
+            
             # 点击搜索按钮左侧
             element = self.find_search_button()
             pyautogui.click(element.left - 100, element.top + element.height / 2)
