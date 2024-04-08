@@ -15,7 +15,7 @@
 ## 2. 使用说明
 * ### [文档说明-飞书](https://wxh4x2repwf.feishu.cn/wiki/BnSkwYvHKi9nygkswKucleHvnle）
 * (1) 安装[Windows版微信](https://pc.weixin.qq.com/)，并且登陆
-* (2) 在[release](https://github.com/bethharmoning1/WechatMoments/release)下载压缩包wechat_moments.zip 
+* (2) 在[release](https://github.com/bethharmoning1/WechatMoments/releases/tag/latest)下载压缩包wechat_moments.zip 
 * (3) 解压文件夹（路径不要包含中文）
 * (4) 管理员身份运行wechat_moments.exe，并按提示操作
 * (5) 如发生异常，重启微信，重启软件
